@@ -66,7 +66,7 @@ def normalize_features(features, technique="standard"):
     return features_scaled
 
 # Process a Single Audio File and Create CSV for Prediction
-def process_single_audio_for_prediction(file_path, segment_duration=1, overlap_duration=0.5, output_csv='single_audio_features.csv'):
+def process_single_audio_for_prediction(file_path, segment_duration=1, overlap_duration=0.25, output_csv='single_audio_features.csv'):
     segments = split_single_audio_file(file_path, segment_duration=segment_duration, overlap_duration=overlap_duration)
 
     if segments:  # Ensure segments list is not empty
