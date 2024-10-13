@@ -16,7 +16,7 @@ if not os.path.exists(UPLOAD_FOLDER):
 
 @app.route("/", methods=['GET'])
 def hi():
-    return jsonify({"hi from final deployment": 1}), 200
+    return jsonify({"hi abgd": 1}), 200
 
 @app.route("/analyze/", methods=['POST'])
 def analyze_audio():
