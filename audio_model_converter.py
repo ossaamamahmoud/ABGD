@@ -115,7 +115,7 @@ def audio_model_converter(audio_file: str):
     output_csv = 'single_audio_test.csv'
 
     # Process the single audio file and create the CSV for model prediction
-    process_single_audio_for_prediction(single_audio_file, segment_duration=1, overlap_duration=0.25, output_csv=output_csv)
+    process_single_audio_for_prediction(single_audio_file, segment_duration=1, overlap_duration=0.5, output_csv=output_csv)
 
     try:
         # Load the trained model
