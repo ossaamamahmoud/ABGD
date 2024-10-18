@@ -30,7 +30,7 @@ def extract_audio_features_with_noise(audio, sr, noise_factor=0.005):
     return combined
 
 # Segment a single audio file and extract features
-def split_single_audio_file(file_path, segment_duration=1, overlap_duration=0.5, target_sr=16000):
+def split_single_audio_file(file_path, segment_duration=1, overlap_duration=0.50, target_sr=16000):
     audio, sr = librosa.load(file_path, sr=target_sr)
     samples_per_segment = int(segment_duration * target_sr)
     samples_per_overlap = int(overlap_duration * target_sr)
@@ -115,7 +115,7 @@ def audio_model_converter(audio_file: str):
     output_csv = 'single_audio_test.csv'
 
     # Process the single audio file and create the CSV for model prediction
-    process_single_audio_for_prediction(single_audio_file, segment_duration=1, overlap_duration=0.5, output_csv=output_csv)
+    process_single_audio_for_prediction(single_audio_file, segment_duration=1, overlap_duration=0.50, output_csv=output_csv)
 
     try:
         # Load the trained model
