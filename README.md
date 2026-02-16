@@ -36,11 +36,4 @@ The app also provides **secure storage** for test results and collaborates with 
 3. The **CNN model** analyzes the audio and classifies it into stuttering, normal speech, or noise.  
 4. Results are securely stored, and users can track progress or access personalized therapy plans.  
 
----
-
-## **Demo Video**  
-
-
-https://github.com/user-attachments/assets/97a64476-5145-40b0-93a6-a423ec77a584
-
 
